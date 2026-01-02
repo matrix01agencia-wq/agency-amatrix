@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Amatrix | Motor de Agenda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300;400;700&display=swap');
+        
+        body { 
+            background-color: #000; 
+            color: #fff; 
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .impact-title { 
+            font-family: 'Archivo Black', sans-serif; 
+            text-transform: uppercase; 
+            line-height: 0.85;
+            letter-spacing: -2px;
+        }
+
+        .neon-green-text { color: #39FF14; }
+        .neon-purple-text { color: #FF00FF; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .card-border-green { border: 1px solid #39FF14; background: rgba(57, 255, 20, 0.05); }
+        .card-border-purple { border: 1px solid #FF00FF; background: rgba(255, 0, 255, 0.05); }
+
+        .nav-link { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover { color: #39FF14; }
+
+        .urgent-bar {
+            background: #FF0000;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+        }
+
+        input[type="date"], input[type="time"], select, input[type="text"], input[type="number"] {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input[type="date"]:focus, input[type="time"]:focus, select:focus, input[type="text"]:focus, input[type="number"]:focus {
+            border-color: #39FF14;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="urgent-bar text-white text-center py-3 text-xs font-bold uppercase sticky top-0 z-[60]">
+        ATENCIÓN: SOLO 100 LICENCIAS DISPONIBLES ESTE MES. ¡ÚNETE AHORA!
+        <div class="w-64 bg-white/30 h-1.5 mx-auto mt-2 rounded-full overflow-hidden">
+            <div class="bg-white h-full" style="width: 27%;"></div>
+        </div>
+        <div class="text-[10px] mt-1">27% VENDIDO | ÚLTIMOS CUPOS</div>
+    </div>
+
+    <nav class="bg-black/95 border-b border-white/10 p-5 sticky top-[68px] z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#39FF14] rounded-sm rotate-45"></div>
+                <span class="text-xl font-bold tracking-tighter italic">AGENCY AMATRIX</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="profesionales.html" class="nav-link">Profesionales</a>
+                <a href="agenda.html" class="nav-link neon-green-text">Agenda</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="px-6 py-16 max-w-7xl mx-auto">
+        <h1 class="impact-title text-5xl md:text-7xl mb-4">
+            MOTOR DE 5XL <br> <span class="neon-green-text">AGENDA</span>
+        </h1>
+        <p class="text-gray-500 uppercase text-xs font-bold tracking-widest">ATENCIÓN: SOLO 100 LICENCIAS DISPONIBLES ESTE MES. ¡ÚNETE AHORA!</p>
+        <div class="w-64 bg-white/30 h-1.5 mt-2 rounded-full overflow-hidden">
+            <div class="bg-white h-full" style="width: 27%;"></div>
+        </div>
+        <div class="text-[10px] mt-1 text-gray-400">27% VENDIDO | ÚLTIMOS CUPOS</div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="card-border-purple p-8 rounded-xl flex flex-col">
+                <h2 class="text-lg font-bold uppercase mb-6 flex items-center">
+                    <span class="w-4 h-4 bg-[#FF00FF] mr-3 rounded-sm"></span> Comacira Resenl
+                </h2>
+                
+                <div class="bg-[#1a1a1a] p-6 rounded-lg space-y-4 flex-grow">
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase">Resumen de Reserva</p>
+                        <p class="text-lg font-bold mt-1">No seleccionado</p>
+                    </div>
+                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                        <span class="text-[#FF00FF]">E</span>
+                        <span>Freccionel Potresnar</span>
+                    </div>
+                    <div class="text-sm text-gray-300">
+                        <span>Fora de rásar</span>
+                    </div>
+                    <div class="text-sm text-gray-300">
+                        <span>Hora de Llegada</span>
+                    </div>
+                    <div class="text-sm text-gray-300">
+                        <span>Asignacion</span>
+                    </div>
+                    <button class="w-full bg-[#FF00FF] text-white py-3 rounded-md font-bold uppercase mt-6 hover:bg-[#c900c9] transition">
+                        CONFIRMAR DETALLES
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-border-green p-8 rounded-xl flex flex-col">
+                <h2 class="text-lg font-bold uppercase mb-6 flex items-center">
+                    <span class="w-4 h-4 bg-[#39FF14] mr-3 rounded-sm"></span> Configura Tu Cita
+                </h2>
+
+                <div class="space-y-4 flex-grow">
+                    <div>
+                        <label for="fecha-servicio" class="block text-sm font-bold mb-2">Fecha del servicio</label>
+                        <input type="date" id="fecha-servicio" class="w-full">
+                    </div>
+                    <div>
+                        <label for="time-servicio" class="block text-sm font-bold mb-2">Fecha y del Servicios</label>
+                        <input type="time" id="time-servicio" class="w-full">
+                    </div>
+                    
+                    <div class="bg-yellow-800/20 text-yellow-300 p-4 rounded-md text-xs border border-yellow-700 flex items-start">
+                        <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        ADVERTENCIA: SOLO SE HACE EL PAGO A TRAVÉS DE LA PLATAFORMA. UN CÓDIGO SE GENERA TRAS RESERVAR.
+                    </div>
+
+                    <div>
+                        <label for="oferta-precio" class="block text-sm font-bold mb-2">Oferta de Precio (InDriver Style)</label>
+                        <input type="number" id="oferta-precio" placeholder="$0.00 - $1000" class="w-full text-lg font-bold">
+                    </div>
+
+                    <button class="w-full bg-[#39FF14] text-black py-3 rounded-md font-bold uppercase mt-6 hover:bg-[#2ecc71] transition">
+                        SOLICITAR AGENTE
+                    </button>
+
+                    <a href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=TU_PREF_ID_AQUI" target="_blank" class="block w-full text-center bg-blue-600 text-white py-3 rounded-md font-bold uppercase hover:bg-blue-700 transition">
+                        PAGAR CON MERCADO PAGO
+                    </a>
+                </div>
+                <p class="text-[10px] text-gray-50
