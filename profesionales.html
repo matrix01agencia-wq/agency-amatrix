@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Amatrix | Profesionales Verificados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300;400;700&display=swap');
+        
+        body { 
+            background-color: #000; 
+            color: #fff; 
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .impact-title { 
+            font-family: 'Archivo Black', sans-serif; 
+            text-transform: uppercase; 
+            line-height: 0.85;
+            letter-spacing: -2px;
+        }
+
+        .neon-green-text { color: #39FF14; }
+        .neon-purple-text { color: #FF00FF; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .glass-card:hover {
+            border-color: #39FF14;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+        }
+
+        .nav-link { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover { color: #39FF14; }
+
+        .urgent-bar {
+            background: #FF0000;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="urgent-bar text-white text-center py-3 text-xs font-bold uppercase sticky top-0 z-[60]">
+        ATENCIÓN: SOLO 100 LICENCIAS DISPONIBLES ESTE MES. ¡ÚNETE AHORA!
+        <div class="w-64 bg-white/30 h-1.5 mx-auto mt-2 rounded-full overflow-hidden">
+            <div class="bg-white h-full" style="width: 27%;"></div>
+        </div>
+        <div class="text-[10px] mt-1">27% VENDIDO | ÚLTIMOS CUPOS</div>
+    </div>
+
+    <nav class="bg-black/95 border-b border-white/10 p-5 sticky top-[68px] z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#39FF14] rounded-sm rotate-45"></div>
+                <span class="text-xl font-bold tracking-tighter italic">AGENCY AMATRIX</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="profesionales.html" class="nav-link neon-green-text">Profesionales</a>
+                <a href="agenda.html" class="nav-link">Agenda</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="px-6 py-16 max-w-7xl mx-auto">
+        <h1 class="impact-title text-5xl md:text-7xl mb-4">
+            NUESTROS <br> <span class="neon-green-text">EXPERTOS</span>
+        </h1>
+        <p class="text-gray-500 uppercase text-xs font-bold tracking-widest">IDENTIDAD VERIFICADA | +20 SERVICIOS LISTOS</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-6 rounded-xl border-l-4 border-[#FF00FF]">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="w-16 h-16 rounded-full border-2 border-[#FF00FF]" alt="Foto de Archivo Black">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase neon-purple-text">Archivo Black</h3>
+                        <p class="text-[10px] text-gray-400">Moesfesiite yoniesterat</p>
+                        <div class="flex items-center text-sm mt-1">
+                            <span class="text-[#39FF14]">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xs mb-4 italic">"The Geresido de Aesiasiss, vences wases hue bo colom's fhare anducitue screrciulai si wos'ucuai."</p>
+                <div class="text-right">
+                    <a href="agenda.html" class="bg-[#39FF14] text-black px-6 py-2 text-xs font-bold uppercase rounded-sm hover:scale-105 transition shadow-[0_0_10px_rgba(57,255,20,0.3)]">Ver Agenda</a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl border-l-4 border-[#39FF14]">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" class="w-16 h-16 rounded-full border-2 border-[#39FF14]" alt="Foto de Archivo Black">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase neon-green-text">Archivo Black</h3>
+                        <p class="text-[10px] text-gray-400">Professional Merisilat</p>
+                        <div class="flex items-center text-sm mt-1">
+                            <span class="text-[#39FF14]">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xs mb-4 italic">"The leniasación the waddá la paterned toclosas o' tousad la trom bontaiogade. The esegere lan cuisto usile waore."</p>
+                <div class="text-right">
+                    <a href="agenda.html" class="bg-[#39FF14] text-black px-6 py-2 text-xs font-bold uppercase rounded-sm hover:scale-105 transition shadow-[0_0_10px_rgba(57,255,20,0.3)]">Ver Agenda</a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl border-l-4 border-[#FF00FF]">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" class="w-16 h-16 rounded-full border-2 border-[#FF00FF]" alt="Foto de Natme Purnates">
+                    <div>
+                        <h3 class="font-bold text-xl uppercase neon-purple-text">Natme Purnates</h3>
+                        <p class="text-[10px] text-gray-400">Cifcroraa monessaat</p>
+                        <div class="flex items-center text-sm mt-1">
+                            <span class="text-[#39FF14]">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xs mb-4 italic">"This esexcesed de vesilos tonamue, tbe rue som coulos hoe Gondo Aidanion to bhesut were."</p>
+                <div class="text-right">
+                    <a href="agenda.html" class="bg-[#39FF14] text-black px-6 py-2 text-xs font-bold uppercase rounded-sm hover:scale-105 transition shadow-[0_0_10px_rgba(57,255,20,0.3)]">Ver Agenda</a>
+                </div>
+            </div>
+            
+            </div>
+    </main>
+
+    <footer class="p-10 text-center border-t border-white/10 text-gray-700 text-[10px] uppercase font-bold tracking-widest">
+        Agency Amatrics Guide - Filtros por cercanía y valoración
+    </footer>
+
+</body>
+</html>
