@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Amatrix | Aprender & Emprender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300;400;700&display=swap');
+        
+        body { background-color: #000; color: #fff; font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+        .impact-title { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; line-height: 0.85; letter-spacing: -2px; }
+        .neon-green-text { color: #39FF14; }
+        .neon-purple-text { color: #FF00FF; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s; }
+        .nav-link { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-link:hover { color: #39FF14; }
+        
+        .ai-glow { box-shadow: 0 0 20px rgba(57, 255, 20, 0.2); border: 1px solid #39FF14; }
+        .btn-pro { background: linear-gradient(90deg, #FF00FF, #800080); transition: 0.3s; }
+        .btn-pro:hover { box-shadow: 0 0 15px #FF00FF; transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-black/95 border-b border-white/10 p-5 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#39FF14] rounded-sm rotate-45"></div>
+                <span class="text-xl font-bold italic">AGENCY AMATRIX</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="profesionales.html" class="nav-link">Profesionales</a>
+                <a href="aprender.html" class="nav-link neon-green-text">Aprender</a>
+                <a href="agenda.html" class="nav-link">Agenda</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="px-6 py-16 max-w-7xl mx-auto text-center md:text-left">
+        <h1 class="impact-title text-6xl md:text-8xl mb-4">
+            ACADEMIA <br> <span class="neon-green-text">AMATRIX</span>
+        </h1>
+        <p class="text-gray-500 uppercase text-xs font-bold tracking-widest italic">Miles de cursos con IA para dominar servicios presenciales y virtuales</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20 grid md:grid-cols-3 gap-8">
+        
+        <div class="md:col-span-2 space-y-8">
+            <div class="glass-card p-8 rounded-2xl ai-glow">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-[#39FF14] rounded-full flex items-center justify-center animate-pulse">
+                        <span class="text-black font-bold">IA</span>
+                    </div>
+                    <h3 class="impact-title text-2xl uppercase">Asistente de <span class="neon-green-text">Aprendizaje</span></h3>
+                </div>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    "Bienvenido a la Academia. Te enseñaré nivel por nivel hasta que puedas solucionar cualquier problema técnico con maestría profesional. ¿Qué deseas aprender a dictar hoy?"
+                </p>
+                
+                <div class="grid gap-3">
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10 flex justify-between items-center border-l-4 border-[#39FF14]">
+                        <div>
+                            <span class="text-[10px] font-bold text-[#39FF14]">NIVEL 1</span>
+                            <h4 class="text-sm font-bold uppercase italic">Fundamentos y Seguridad IA</h4>
+                        </div>
+                        <span class="text-[10px] bg-white/10 px-2 py-1 rounded text-[#39FF14]">ACTIVO</span>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10 flex justify-between items-center opacity-60">
+                        <div>
+                            <span class="text-[10px] font-bold">NIVEL 2</span>
+                            <h4 class="text-sm font-bold uppercase italic">Ejecución Técnica del Servicio</h4>
+                        </div>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2V7a5 5 0 00-5-5zM7 7a3 3 0 116 0v2H7V7z"></path></svg>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10 flex justify-between items-center opacity-60">
+                        <div>
+                            <span class="text-[10px] font-bold">NIVEL 3</span>
+                            <h4 class="text-sm font-bold uppercase italic">Certificación y Salida Laboral</h4>
+                        </div>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2V7a5 5 0 00-5-5zM7 7a3 3 0 116 0v2H7V7z"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-xl border-t-2 border-[#39FF14]">
+                    <h4 class="font-bold uppercase mb-2 italic">Servicios Presenciales</h4>
+                    <p class="text-[10px] text-gray-500 mb-4">Plomería, Masajes, Electricidad, Reparaciones Técnicas.</p>
+                    <button class="text-[#39FF14] text-xs font-bold uppercase underline">Ver 1,500 Cursos</button>
+                </div>
+                <div class="glass-card p-6 rounded-xl border-t-2 border-[#FF00FF]">
+                    <h4 class="font-bold uppercase mb-2 italic">Servicios Virtuales</h4>
+                    <p class="text-[10px] text-gray-500 mb-4">Asesoría IA, Diseño, Soporte Remoto, Consultoría.</p>
+                    <button class="text-[#FF00FF] text-xs font-bold uppercase underline">Ver 2,800 Cursos</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="glass-card p-8 rounded-2xl bg-gradient-to-br from-[#111] to-black border-l-4 border-[#FF00FF]">
+                <h3 class="impact-title text-xl mb-4 italic neon-purple-text">SECTOR PRO</h3>
+                <p class="text-[11px] text-gray-400 mb-6 uppercase leading-relaxed">
+                    ¿Ya eres profesional en la red? Aprende a maximizar tus ganancias y dominar el sistema de ofertas.
+                </p>
+                <div class="space-y-4">
+                    <div class="text-[10px] font-bold border-b border-white/5 pb-2 uppercase">● Estrategias de Negociación InDriver</div>
+                    <div class="text-[10px] font-bold border-b border-white/5 pb-2 uppercase">● Optimización de Perfil con IA</div>
+                    <div class="text-[10px] font-bold border-b border-white/5 pb-2 uppercase">● Fidelización de Clientes VIP</div>
+                </div>
+                <button class="w-full mt-8 btn-pro text-white py-3 font-bold text-xs rounded-sm uppercase italic">Acceso Masterclass</button>
+            </div>
+
+            <div class="p-4 bg-[#39FF14]/5 border border-[#39FF14]/20 rounded-lg">
+                <p class="text-[9px] text-gray-400 italic">
+                    "El conocimiento técnico es la base, la excelencia profesional es el resultado. Entrena con la IA de Amatrix."
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="p-10 text-center border-t border-white/10 text-gray-700 text-[10px] uppercase font-bold tracking-widest">
+        &copy; 2026 Academia Amatrix - Sistema Educativo con Inteligencia Artificial
+    </footer>
+
+</body>
+</html>
